@@ -117,7 +117,7 @@ export const AiAdvisor: React.FC = () => {
                          </div>
                          <div className="mt-6 pt-4 border-t border-slate-200 flex items-center gap-2 text-xs text-slate-400">
                             <AlertCircle className="w-3 h-3" />
-                            <span>AI-generated content. Verify with local municipal authorities before implementation.</span>
+                        
                          </div>
                     </div>
                 )}
