@@ -1,4 +1,4 @@
-# 🟩 EcoMetric India – MSW Landfill Estimation for Top 10 Indian Cities
+# EcoMetric India – MSW Landfill Estimation for Top 10 Indian Cities
 
 EcoMetric India is an interactive platform designed to help **urban planners, environmental engineers, researchers, and policymakers** estimate Municipal Solid Waste (MSW) generation and landfill land requirements for major Indian cities.  
 
@@ -6,13 +6,13 @@ This project combines **data analytics**, **engineering assumptions**, and **AI-
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-👉 [https://ecometric-india-app.vercel.app/](https://ecometric-india-app.vercel.app/)
+[https://ecometric-india-app.vercel.app/](https://ecometric-india-app.vercel.app/)
 
 ---
 
-## 📌 Features
+## Features
 
 ### ✔ City Dashboard
 - Waste generation per city  
@@ -51,7 +51,7 @@ Generates:
 
 ---
 
-## 🛠 Installation & Development
+## Installation & Development
 
 ### 1. Clone the repository
 ```bash
