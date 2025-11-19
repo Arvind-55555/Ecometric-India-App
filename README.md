@@ -8,7 +8,7 @@ This project combines **data analytics**, **engineering assumptions**, and **AI-
 
 ## 🌐 Live Demo
 
-👉 https://your-app-url.vercel.app/
+👉 [https://your-app-url.vercel.app/](https://ecometric-india-app.vercel.app/)
 
 ---
 
