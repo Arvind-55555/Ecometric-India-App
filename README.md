@@ -2,13 +2,13 @@
 
 EcoMetric India is an interactive platform designed to help **urban planners, environmental engineers, researchers, and policymakers** estimate Municipal Solid Waste (MSW) generation and landfill land requirements for major Indian cities.  
 
-This project combines **data analytics**, **engineering assumptions**, and **AI-backed insights** (Gemini support with mock fallback) to deliver an easy-to-use decision support tool.
+This project combines **data analytics**, **engineering assumptions**, and **AI-backed insights** to deliver an easy-to-use decision support tool.
 
 ---
 
 ## 🌐 Live Demo
 
-👉 https://your-app-url.vercel.app/
+👉 [https://ecometric-india-app.vercel.app/](https://ecometric-india-app.vercel.app/)
 
 ---
 
@@ -47,7 +47,7 @@ Generates:
 - TailwindCSS  
 - Recharts  
 - Lucide Icons  
-- Google GenAI (optional)
+- Google GenAI 
 
 ---
 
