@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import OpenAI from "openai";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -6,9 +6,9 @@ export default async function handler(req, res) {
   }
 
   try {
-    const apiKey = process.env.API_KEY;
+    const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
-      return res.status(500).json({ error: "Missing API_KEY in Vercel environment" });
+      return res.status(500).json({ error: "Missing OPENAI_API_KEY in Vercel env" });
     }
 
     const { prompt } = req.body;
@@ -16,16 +16,20 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Missing prompt" });
     }
 
-    const ai = new GoogleGenAI({ apiKey });
+    const client = new OpenAI({ apiKey });
 
-    const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
-      contents: prompt,
+    const completion = await client.chat.completions.create({
+      model: "gpt-4.1-mini",      // Good performance + low cost
+      messages: [
+        { role: "system", content: "You are an expert environmental engineer specializing in Indian MSW management and landfill planning." },
+        { role: "user", content: prompt }
+      ],
+      max_tokens: 800
     });
 
-    res.status(200).json({ text: response.text || "No response" });
+    return res.status(200).json({ text: completion.choices[0].message.content });
   } catch (err) {
     console.error("AI Error:", err);
-    res.status(500).json({ error: "AI generation failed" });
+    return res.status(500).json({ error: "AI generation failed" });
   }
 }

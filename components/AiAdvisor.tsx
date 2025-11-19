@@ -38,7 +38,7 @@ export const AiAdvisor: React.FC = () => {
                 <h2 className="text-2xl font-bold">AI Waste Strategy Advisor</h2>
             </div>
             <p className="text-emerald-50 max-w-xl">
-                Leverage Gemini 2.5 Flash to generate tailored strategies for reducing landfill dependency based on specific city compositions.
+                Leverage Open AI to generate tailored strategies for reducing landfill dependency based on specific city compositions.
             </p>
         </div>
 
